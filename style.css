@@ -1,1 +1,29 @@
 /* CSS Style Sheet */
+body {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px 300px;
+  padding: 30px;
+}
+
+hr {
+  width: 750px;
+}
+
+input {
+  width: 40px;
+  font-size: 15px;
+}
+
+button {
+  background-color: yellow;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-variant: small-caps;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(140, 0, 255);
+  color: white;
+}
