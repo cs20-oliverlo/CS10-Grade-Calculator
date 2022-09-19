@@ -8,7 +8,14 @@ let clientSide2 = +prompt("Enter your Client-Side Scripting 2 mark (# only):");
 let pA = +prompt("Enter your Project A mark (# only):");
 
 // Process
-let finalGrade = (clientSide1 + sP1 + sP2 + clientSide2 + pA)/5
+let finalGrade = (clientSide1 + sP1 + sP2 + clientSide2 + pA)/5;
 
 // Output
-alert(`Your Final CS10 Grade is ${finalGrade}%.`)
+if (finalGrade > 100) {
+    alert(`Invalid`);
+} else {
+alert(`Your Final CS10 Grade is ${finalGrade}%.`);
+}
+
+if (finalGrade == 0) {
+    alert(`LOL`);}
