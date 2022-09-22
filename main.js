@@ -1,21 +1,18 @@
 // IPO CS10 GRADE CALCULATOR By Oliver Lo
 
+document.getElementById("btn").addEventListener("click", btnClicked);
+
+function btnClicked() {
 // Input
-let clientSide1 = +prompt("Enter your Client-Side Scripting 1 mark (# only):");
-let sP1 = +prompt("Enter your Structured Programming 1 mark (# only):");
-let sP2 = +prompt("Enter your Structured Programming 2 mark (# only):");
-let clientSide2 = +prompt("Enter your Client-Side Scripting 2 mark (# only):");
-let pA = +prompt("Enter your Project A mark (# only):");
+    let cl1 = +document.getElementById("cl1-in").value;
+    let sp1 = +document.getElementById("sp1-in").value;
+    let sp2 = +document.getElementById("sp2-in").value;
+    let cl2 = +document.getElementById("cl2-in").value;
+    let pa = +document.getElementById("pa-in").value;
 
-// Process
-let finalGrade = (clientSide1 + sP1 + sP2 + clientSide2 + pA)/5;
+    // Process
+    let finalGrade = ((cl1) + (cl2) + (sp1) + (sp2) + (pa))/5
 
-// Output
-if (finalGrade > 100) {
-    alert(`Invalid`);
-} else {
-alert(`Your Final CS10 Grade is ${finalGrade}%.`);
+    // Output
+    document.getElementById("output").innerHTML = finalGrade
 }
-
-if (finalGrade == 0) {
-    alert(`LOL`);}
