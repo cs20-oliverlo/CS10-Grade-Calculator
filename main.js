@@ -11,8 +11,8 @@ function btnClicked() {
     let pa = +document.getElementById("pa-in").value;
 
     // Process
-    let finalGrade = ((cl1) + (cl2) + (sp1) + (sp2) + (pa))/5
+    let finalGrade = (cl1 + cl2 + sp1 + sp2 + pa) / 5
 
     // Output
-    document.getElementById("output").innerHTML = finalGrade
+    document.getElementById("output").innerHTML = finalGrade + "%"
 }
