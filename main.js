@@ -10,9 +10,26 @@ function btnClicked() {
     let cl2 = +document.getElementById("cl2-in").value;
     let pa = +document.getElementById("pa-in").value;
 
-    // Process
+    // Process & Output
     let finalGrade = (cl1 + cl2 + sp1 + sp2 + pa) / 5
+    getLetterGrade(finalGrade);
+}
 
-    // Output
-    document.getElementById("output").innerHTML = finalGrade + "%"
+function getLetterGrade(grade) {
+    if (grade <= 49) {
+        // Output
+        document.getElementById("output").innerHTML = grade + "% F HAHHAHAHAHAHAA" 
+    } else if (grade <= 59) {
+        // Output
+        document.getElementById("output").innerHTML = grade + "% D"
+    } else if (grade <= 74) {
+        // Output
+        document.getElementById("output").innerHTML = grade + "% C"
+    } else if (grade <= 89) {
+        // Output
+        document.getElementById("output").innerHTML = grade + "% B"
+    } else {
+        // Output
+        document.getElementById("output").innerHTML = grade + "% A"
+    }
 }
